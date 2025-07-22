@@ -13,7 +13,7 @@ int main(){
     for(int i = 1; i <= x; i++){ 
         for(int j = 0; j < n; j++){ 
             if(a[j] <= i){
-                dp[i] = (dp[i] + dp[i - a[j]]) % MOD;
+                dp[i] = (dp[i] + dp[i - a[j]]) ;
             }
         }
     }
